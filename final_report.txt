@@ -1,0 +1,108 @@
+
+ELECTION ANALYTICS 2026
+SRIPERUMBUDUR
+
+========================================
+
+Historical data:
+2016 -> 2021
+
+Historical matched observations:
+1974
+
+Training observations:
+1578
+
+Testing observations:
+396
+
+----------------------------------------
+
+MODEL COMPARISON
+
+            Model      MAE     RMSE       R2
+    Random Forest 0.030072 0.054843 0.921065
+          XGBoost 0.031425 0.057781 0.912380
+Gradient Boosting 0.032926 0.059705 0.906448
+MLP Deep Learning 0.032251 0.061637 0.900297
+Linear Regression 0.034491 0.063389 0.894547
+
+----------------------------------------
+
+LOWEST HISTORICAL RMSE MODEL:
+
+Random Forest
+
+MAE:
+0.03007
+
+RMSE:
+0.05484
+
+R2:
+0.92107
+
+----------------------------------------
+
+DEEP LEARNING CONFIGURATION
+
+Model:
+Multilayer Perceptron
+
+Hidden Layer 1:
+64 neurons
+Activation = ReLU
+
+Dropout = 20%
+
+Hidden Layer 2:
+32 neurons
+Activation = ReLU
+
+Dropout = 15%
+
+Hidden Layer 3:
+16 neurons
+Activation = ReLU
+
+Output:
+1 neuron
+Sigmoid activation
+
+Optimizer:
+Adam
+
+Learning Rate:
+0.001
+
+Loss:
+Mean Squared Error
+
+Batch Size:
+32
+
+Maximum Epochs:
+150
+
+Early Stopping:
+Enabled
+
+----------------------------------------
+
+LIMITATIONS
+
+The model is evaluated as a historical
+2016-to-2021 backtest.
+
+Polling-station numbering and boundaries
+may change between elections.
+
+Assembly and local-body elections can
+involve different wards, candidates,
+alliances and turnout.
+
+2026 supplied booth data is analysed
+descriptively and should not be treated
+as certainty about a future election result.
+
+========================================
